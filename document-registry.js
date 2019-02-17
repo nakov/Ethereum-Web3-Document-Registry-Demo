@@ -7,7 +7,10 @@ $(document).ready(function() {
     $('#linkVerifyDocument').click(function() { showView("viewVerifyDocument") });
     $('#documentUploadButton').click(uploadDocument);
     $('#documentVerifyButton').click(verifyDocument);
-    
+	
+    $('#contractLink').text(documentRegistryContractAddress);
+    $('#contractLink').attr('href', 'https://ropsten.etherscan.io/address/' + documentRegistryContractAddress);
+	    
     // Attach AJAX "loading" event listener
     $(document).on({
         ajaxStart: function() { $("#loadingBox").show() },
