@@ -1,0 +1,13 @@
+{
+  "name": "document-registry-nakov",
+  "version": "1.0.0",
+  "description": "Document Registry DApp",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Svetlin Nakov",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
